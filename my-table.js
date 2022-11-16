@@ -1,17 +1,13 @@
-define(["./initialProperties", "./definition", "./paint", "./support", "./resize", "text!./my-table.css"], function(myProps, myDefinition, myPaint, mySupport, myResize, cssText) {
-    // Create a style element
-	var style = document.createElement("style");
-	// Set the style element content
-	style.innerHTML = cssText;
-	// Add the style to the header of the page
-	document.querySelector("head").appendChild(style);
+define(["jquery", "qlik", "./initialProperties", "./definition", "./paint", "./support", "./resize", "text!./my-table.css"], function($, qlik, myProps, myDefinition, myPaint, mySupport, myResize, cssText) {
 
-	return {
-		initialProperties: myProps,
-		definition: myDefinition,
+    'use strict';
+    $("<style>").html(cssText).appendTo("head");
+
+    return {
+        initialProperties: myProps,
+        definition: myDefinition,
         paint: myPaint,
         support: mySupport,
         resize: myResize
-	};
+    };
 });
-

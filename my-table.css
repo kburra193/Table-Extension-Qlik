@@ -1,21 +1,37 @@
 .qv-object-my-table th {
-	text-align: left;
-	font-weight: bold;
-	color: #737373;
-	font-size: 14px;
-	line-height: 18px;
-	border-bottom: 1px solid #D2CCCC;
-	padding: 0px 6px;
+	border-top: 0px solid #fff;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    cursor: default;
+    font-size: small;
 }
 
 .qv-object-my-table td {
 	text-align: left;
-	font-weight: normal;
-	color: #5A5A5A;
-	font-size: 14px;
-	line-height: 18px;
-	padding: 8px 6px;
+    font-weight: normal;
+    color: #5A5A5A;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 8px 6px;
+    border-top: 0px solid #fff;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    cursor: default;
+    font-size: small;
 }
+
+.qv-object-my-table th i.secondary {
+	opacity: 0.3;
+}
+
 
 /*
 .qv-object-my-table tr:nth-child(6n-2) td {
