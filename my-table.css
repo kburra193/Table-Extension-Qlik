@@ -1,5 +1,5 @@
 .qv-object-my-table th {
-	border-top: 0px solid #fff;
+    border-top: 0px solid #fff;
     border-bottom: 1px solid #ddd;
     border-right: 1px solid #ddd;
     white-space: nowrap;
@@ -11,7 +11,7 @@
 }
 
 .qv-object-my-table td {
-	text-align: left;
+    text-align: left;
     font-weight: normal;
     color: #5A5A5A;
     font-size: 14px;
